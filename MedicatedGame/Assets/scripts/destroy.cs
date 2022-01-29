@@ -10,13 +10,7 @@ public class destroy : MonoBehaviour
 
      private void OnTriggerEnter2D(Collider2D collision) 
     {
-        if(collision.gameObject.tag == "block") //Detectar con que colisiono
-        {
-
-           Destroy(gameObject);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
-
-        }   
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
     }
 
 }
