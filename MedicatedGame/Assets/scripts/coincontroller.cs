@@ -9,11 +9,10 @@ public class coincontroller : MonoBehaviour
     { 
         GameObject general = GameObject.Find("general"); 
         general.GetComponent<ScoreManager>().RaiseScore(1);
-        Destroy(gameObject);
-
+    
         GameObject Estado = GameObject.Find("ui_barra_circulo");
         Estado.GetComponent<changeEstado>().PediNaranjas(1);
-
+        Destroy(gameObject);
     }
     private void Update() 
     {

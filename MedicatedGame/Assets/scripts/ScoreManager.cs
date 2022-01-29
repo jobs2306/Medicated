@@ -6,19 +6,13 @@ using UnityEngine.UI;
 public class ScoreManager : MonoBehaviour
 {
     int score = 0;
-    int highScore = 0;
-    public Text HiScore;
     public Text scoreText;
 
     public void RaiseScore(int s)
     {
+        GameObject highScore1 = GameObject.Find("mantenerHighScore");
         score+= s;
+        highScore1.GetComponent<highscore>().HighS(score);
         scoreText.text = score + "";
-        if(highScore<score)
-        {
-            highScore = score;
-            HiScore.text = highScore + "";
-        }
-
     }
 }
