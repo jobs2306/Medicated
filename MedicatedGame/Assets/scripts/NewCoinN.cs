@@ -6,11 +6,13 @@ public class NewCoinN : MonoBehaviour
 {
     float timer;
     public GameObject coinPrefab1;
+    public float l1 = 4f;
+    public float l2 = 5f;
 
     void Update()
     {
         timer += Time.deltaTime;
-        float t = Random.Range(1f, 2f);
+        float t = Random.Range(l1, l2);
         if(timer >= t)
         {
             timer=0;

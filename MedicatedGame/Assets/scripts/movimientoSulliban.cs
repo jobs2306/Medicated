@@ -21,9 +21,9 @@ public class movimientoSulliban : MonoBehaviour
     {
         //control del jugador
         y = Input.GetAxis("Vertical");
-        x = Input.GetAxis("Horizontal");
+       // x = Input.GetAxis("Horizontal");
         transform.Translate(0, y * Time.deltaTime * velMov, 0);
-        transform.Translate(x * Time.deltaTime * velMov, 0, 0);
+        //transform.Translate(x * Time.deltaTime * velMov, 0, 0);
 
         //limites
         if (transform.position.y > limarr)
