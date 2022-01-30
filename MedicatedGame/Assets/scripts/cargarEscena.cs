@@ -7,6 +7,10 @@ public class cargarEscena : MonoBehaviour
 {
     public void LoadScene(string sceneName)
     {
+        Debug.Log("Funciona");
+        GameObject soundController = GameObject.Find("click");
+        soundController.SendMessage("PlayPopSound");
         SceneManager.LoadScene(sceneName);
+        
     }
 }

@@ -21,8 +21,11 @@ public class movimientFondo : MonoBehaviour
 
     void Update()
     {
-        timer += Time.deltaTime;
-        VV = timer * (0.5f/60.0f) + 1;
+        if(VV < 2.5)
+        {
+           timer += Time.deltaTime;
+           VV = timer * (0.5f/60.0f) + 1;
+        }
 
         offset.x += Time.deltaTime / (velocidad/VV); 
         material1.mainTextureOffset = offset;         

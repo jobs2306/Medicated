@@ -5,6 +5,8 @@ using UnityEngine;
 public class azulNaranjaControlador : MonoBehaviour
 {
     private float velocidad = -40f;
+    private float VV = 1;
+    private GameObject DTiempo;
     
     private void OnTriggerEnter2D(Collider2D collision) 
     {
@@ -12,6 +14,8 @@ public class azulNaranjaControlador : MonoBehaviour
     }
     private void Update() 
     {
-        transform.Translate(Vector3.right * Time.deltaTime * velocidad);
+        DTiempo = GameObject.Find("fondo");
+        VV = DTiempo.GetComponent<movimientFondo>().VV;
+        transform.Translate(Vector3.right * Time.deltaTime * velocidad * VV);
     }
 }

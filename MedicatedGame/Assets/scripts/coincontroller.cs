@@ -10,11 +10,15 @@ public class coincontroller : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) 
     { 
+        GameObject soundController = GameObject.Find("pildora");
+        soundController.SendMessage("PlayPopSound");
+
         GameObject general = GameObject.Find("general"); 
         general.GetComponent<ScoreManager>().RaiseScore(1);
     
         GameObject Estado = GameObject.Find("ui_barra_circulo");
         Estado.GetComponent<changeEstado>().PediNaranjas(1);
+
         Destroy(gameObject);
     }
     private void Update() 

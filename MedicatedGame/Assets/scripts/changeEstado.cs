@@ -7,7 +7,7 @@ public class changeEstado : MonoBehaviour
 {
     private float positionIz;
     private float positionDe;
-    private string sceneName1 = "prueba";
+    private string sceneName1 = "lost";
     // Start is called before the first frame update
     void Start()
     {
