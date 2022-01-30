@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637790748886953230
+      ticks: 637791129697537657
     m_Hash: 942797434
   m_LockFileStatus:
     m_FilePath: E:/Proyectos/Medicated/Medicated/MedicatedGame/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637790748886963237
+      ticks: 637791129697537657
     m_Hash: 3493869938
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
