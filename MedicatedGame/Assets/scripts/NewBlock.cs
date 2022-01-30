@@ -6,8 +6,8 @@ public class NewBlock : MonoBehaviour
 {
  float timer;
     public GameObject Block;
-    private float limiteInferior = 3f;
-    private float limiteSuperior = 5f;
+    public float limiteInferior = 3f;
+    public float limiteSuperior = 5f;
 
     void Update()
     {

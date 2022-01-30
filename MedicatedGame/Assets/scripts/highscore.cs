@@ -23,10 +23,10 @@ public class highscore : MonoBehaviour
     {
         if(highScores<s)
         {
-            Debug.Log(highScores+"");
+         //   Debug.Log(highScores+"");
             highScores = s;
         }
-        HiScore.text = highScores + "";
+        //HiScore.text = highScores + "";
 
     }
     private void Update() 
