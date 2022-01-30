@@ -16,7 +16,7 @@ public class NewBlock : MonoBehaviour
         if(timer >= t)
         {
             timer=0;
-            float y = Random.Range(50f, 250f);
+            float y = Random.Range(50f, 190f);
             Vector3 position = new Vector3(420, y, 0);
             Quaternion rotation = new Quaternion();
             Instantiate(Block, position, rotation);

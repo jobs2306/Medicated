@@ -5,6 +5,9 @@ using UnityEngine;
 public class coincontroller : MonoBehaviour
 {
     private float velocidad = -40f;
+    private float VV = 1;
+    private GameObject DTiempo;
+
     private void OnTriggerEnter2D(Collider2D collision) 
     { 
         GameObject general = GameObject.Find("general"); 
@@ -16,7 +19,9 @@ public class coincontroller : MonoBehaviour
     }
     private void Update() 
     {
-        transform.Translate(Vector3.right * Time.deltaTime * velocidad);
+        DTiempo = GameObject.Find("fondo");
+        VV = DTiempo.GetComponent<movimientFondo>().VV;
+        transform.Translate(Vector3.right * Time.deltaTime * velocidad * VV );
     }
  
 }
