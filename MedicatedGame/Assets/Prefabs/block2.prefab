@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -4236966603332092965}
   - component: {fileID: -1807068544554657461}
   - component: {fileID: 8982213272762610602}
+  - component: {fileID: 7927701902942030240}
   m_Layer: 0
   m_Name: block2
   m_TagString: block
@@ -118,6 +119,44 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119043409650888193}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.02, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.55}
+  m_EdgeRadius: 0
+--- !u!114 &8982213272762610602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119043409650888193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a182f91aa13064148b290825e8ef8c8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!60 &7927701902942030240
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119043409650888193}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -134,18 +173,13 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.6}
-  m_EdgeRadius: 0
---- !u!114 &8982213272762610602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 119043409650888193}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a182f91aa13064148b290825e8ef8c8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Points:
+    m_Paths:
+    - - {x: -0.04, y: 0.32}
+      - {x: -0.32, y: -0.099999994}
+      - {x: -0.32, y: -0.21}
+      - {x: -0.089999996, y: -0.32}
+      - {x: 0.08, y: -0.32}
+      - {x: 0.32, y: -0.19999999}
+      - {x: 0.32, y: 0.19}
+      - {x: 0.04, y: 0.32}

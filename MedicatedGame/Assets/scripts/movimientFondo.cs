@@ -21,7 +21,7 @@ public class movimientFondo : MonoBehaviour
 
     void Update()
     {
-        if(VV < 2.5)
+        if(VV < 3)
         {
            timer += Time.deltaTime;
            VV = timer * (0.5f/60.0f) + 1;
